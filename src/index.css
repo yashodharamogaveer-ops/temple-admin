@@ -1,11 +1,16 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Kannada:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700&display=swap');
+@import "tailwindcss";
 
-html, body, #root {
-  height: 100%;
+@theme {
+  --font-sans: "Outfit", "Noto Sans Kannada", system-ui, sans-serif;
+  --color-saffron-50: #fffaf0;
+  --color-saffron-100: #fef3c7;
+  --color-saffron-200: #fde68a;
+  --color-saffron-300: #fdba74;
+  --color-saffron-500: #f97316;
+  --color-saffron-600: #ea580c;
+  --color-saffron-700: #c2410c;
 }
 
-body {
-  font-family: 'Inter', 'Noto Sans Kannada', sans-serif;
-}
+html, body { overscroll-behavior-y: none; }
+body { background: #f5f5f4; -webkit-tap-highlight-color: transparent; }
